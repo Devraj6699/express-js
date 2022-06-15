@@ -1,0 +1,29 @@
+<form method="post">
+    <table>
+<tr>
+    <td>Admin Name : </td>
+    <td><input type="text" placeholder="Enter Name" name="admin_name" value="<%= db_rows_array[0].admin_name %>""
+    required></td>
+</tr>
+
+<tr>
+    <td>Admin Email : </td>
+    <td><input type="text" placeholder="Enter Email" name="admin_email" value="<%= db_rows_array[0].admin_email %>""
+    required></td>
+</tr>
+
+<tr>
+    <td>Admin Password : </td>
+    <td><input type="text" placeholder="Enter password" name="admin_password" value="<%= db_rows_array[0].admin_password %>""
+    required></td>
+</tr>
+<tr>
+    <td>
+        <input type="submit">
+        <input type="button" value="Display" onclick="window.location='display';">
+    </td>
+</tr>
+
+    </table>
+
+</form>
